@@ -1,0 +1,2 @@
+class RbkosController < ApplicationController
+end

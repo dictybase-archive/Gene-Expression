@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Geneid:</b>
+  <%= @gene.geneID %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @gene.name %>
+</p>
+
+<% @rbkos.each do |rbko| %>
+	<p><b> Regulation in rblA Disruptant ~</b> </p>    
+	<div id="placeholder" style="width:600px;height:350px;"></div>
+	<p id="hoverdata"></p>
+	<script type="text/javascript">
+		rbKO(<%= rbko.wtGrowth %>,<%= rbko.wtEarlyCulm%>,<%= rbko.totWT%>, <%=rbko.rbKOGrowth%>, <%=rbko.rbKOEarlyCulm%>, <%=rbko.totrbKO%>);
+	</script>
+<% end %>
+
+<% @devels.each do |devel| %>
+	<p><b> Development ~</b> </p>    
+	<div id="placeholder2" style="width:600px;height:300px;"></div>
+	<p id="hoverdata"></p>
+	<script type="text/javascript">
+		development(<%= devel.hits11 %>, <%= devel.hits12 %>, <%= devel.hits41 %>, <%= devel.hits42 %>, <%= devel.hits81 %>, <%= devel.hits82 %>, <%= devel.hits121 %>,<%= devel.hits122 %>, <%= devel.hits161 %>, <%= devel.hits162 %>, <%= devel.hits201 %>, <%= devel.hits202 %>, <%= devel.hits241 %>, <%= devel.hits242 %>);
+	</script>
+<% end %>
+
+<% @cellcycles.each do |cycle| %>
+	<p><b> Cell Cycles ~</b> </p>    
+	<div id="placeholder3" style="width:600px;height:300px;"></div>
+	<p id="hoverdata"></p>
+	<script type="text/javascript">
+	cellCycle(<%= cycle.asynchHits %>, <%= cycle.T0 %>, <%= cycle.T01 %>, <%= cycle.T1 %>, <%= cycle.T11 %>, <%= cycle.T12 %>, <%= cycle.T2 %>, <%= cycle.T3 %>, <%= cycle.T31 %>, <%= cycle.T4 %>, <%= cycle.T5 %>, <%= cycle.T61 %>, <%= cycle.T65 %>,<%= cycle.T71 %>, <%= cycle.T8 %>, <%= cycle.T9 %>, <%= cycle.T10 %>, <%= cycle.T111 %>, <%= cycle.T121 %>);
+	</script>
+	
+<% end %>
+
+<%= link_to 'Edit', edit_gene_path(@gene) %> |
+<%= link_to 'Back', genes_path %>

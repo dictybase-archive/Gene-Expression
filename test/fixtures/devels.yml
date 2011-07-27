@@ -1,0 +1,41 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  geneID: MyString
+  name: MyString
+  hits11: 1
+  hits12: 1
+  hits41: 1
+  hits42: 1
+  hits81: 1
+  hits82: 1
+  hits121: 1
+  hits122: 1
+  hits161: 1
+  hits162: 1
+  hits201: 1
+  hits202: 1
+  hits241: 1
+  hits242: 1
+  totHits: 1
+  gene: 
+
+two:
+  geneID: MyString
+  name: MyString
+  hits11: 1
+  hits12: 1
+  hits41: 1
+  hits42: 1
+  hits81: 1
+  hits82: 1
+  hits121: 1
+  hits122: 1
+  hits161: 1
+  hits162: 1
+  hits201: 1
+  hits202: 1
+  hits241: 1
+  hits242: 1
+  totHits: 1
+  gene: 

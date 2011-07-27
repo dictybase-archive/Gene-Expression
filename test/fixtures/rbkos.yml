@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  geneID: MyString
+  name: MyString
+  wtGrowth: 1
+  rbKOGrowth: 1
+  wtEarlyCulm: 1
+  rbKOEarlyCulm: 1
+  totWT: 1
+  totrbKO: 1
+  gene: 
+
+two:
+  geneID: MyString
+  name: MyString
+  wtGrowth: 1
+  rbKOGrowth: 1
+  wtEarlyCulm: 1
+  rbKOEarlyCulm: 1
+  totWT: 1
+  totrbKO: 1
+  gene: 

@@ -1,0 +1,2 @@
+class DevelsController < ApplicationController
+end

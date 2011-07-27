@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>genes</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "jquery", "application" %> 
+  <%= javascript_include_tag :all %>
+  <script>$j = jQuery.noConflict();</script>
+  <%= javascript_include_tag "jquery.flot.errorbars.js" %> 
+  <%= javascript_include_tag "rbKO.js"%>
+  <%= javascript_include_tag "development.js"%>
+  <%= javascript_include_tag "cellCycle.js"%>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

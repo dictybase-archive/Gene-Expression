@@ -1,0 +1,2 @@
+class CellcyclesController < ApplicationController
+end
